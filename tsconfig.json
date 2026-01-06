@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
+
+//splits config into app code (tsconfig.app.json ) and build tools (tsconfog.node.json) 
+// enables imports to resolbe ./src
+// monorepo style faster compilation
